@@ -1,0 +1,84 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled17.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPIUjunY+ix6QKYRae4/pRL",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/anotidamalandu/BP_public/blob/main/DMOJ%20solution%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "village_Number = int (input(\"Enter the number of villages : \"))\n",
+        "\n",
+        "positions = list()\n",
+        "for i in range(village_Number):\n",
+        "  positions.append(float(input (\" enter the position \" )))\n",
+        "\n",
+        "sorted(positions)\n",
+        "\n",
+        "sizes = list(positions)\n",
+        "\n",
+        "for i in range(3, village_Number, 100):\n",
+        "  sizes.append( (i(i - 1))/ 2 ((i + 1)-i )/ 2 + (i - 1) )\n",
+        "\n",
+        "sizes.sort()\n",
+        "\n",
+        "print(\" The smallest village is: \", min(sizes))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pXkdYKf89Y3B",
+        "outputId": "ed3c00a3-2245-48ed-ec6f-552e9382efab"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the number of villages : 3\n",
+            " enter the position 2\n",
+            " enter the position 1\n",
+            " enter the position 7\n",
+            " The smallest village is:  1.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "vz50HX78EPui"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
